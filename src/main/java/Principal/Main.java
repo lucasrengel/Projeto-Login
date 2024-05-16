@@ -1,12 +1,10 @@
 package Principal;
 
-import DAO.Connection;
-import View.GUI;
+import View.LoginScreen;
 
 public class Main {
     public static void main(String[] args) {
-        Connection.getConecction();
-
-        GUI.main(args);
+        LoginScreen screen = new LoginScreen();
+        screen.setVisible(true);
     }
 }
